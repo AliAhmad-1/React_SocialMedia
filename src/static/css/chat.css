@@ -1,0 +1,222 @@
+.chat {
+    padding: 0 .5rem;
+}
+
+.chat-header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 0 .5rem;
+    padding: 4px 10px;
+    background-color: rgba(196, 196, 196, 0.277);
+    border-radius: 2px;
+}
+
+.chat-header img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+}
+
+.chat-header .username {
+    font-size: 15px;
+}
+
+.chat-header .last-show {
+    color: rgba(57, 57, 57, 0.621);
+    font-size: 11px;
+    margin-top: 3px;
+}
+
+.messages {
+    height: 70vh;
+    overflow-y: auto;
+    padding: 1rem 8px;
+    margin-top: 1rem;
+}
+
+.messages .content div.send {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.messages .content div.receive {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.messages .content img {
+    width: 250px;
+    height: 190px;
+    border-radius: 3px;
+    object-fit: fill;
+    margin: 4px 0;
+}
+
+.messages .message_send2 {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    flex-direction: column;
+    margin: 6px 0;
+}
+
+.messages .message_send2 div.text {
+    width: fit-content;
+    text-align: end;
+    word-spacing: 2px;
+    font-size: 14px;
+    color: white;
+    background-color: rgba(11, 10, 10, 0.838);
+    border-radius: 13px 13px 0 13px;
+    padding: 8px 1.2rem;
+    position: relative;
+}
+
+.messages .message_send2 .message_info {
+    position: absolute;
+    left: -60px;
+    top: 3px;
+    width: 60px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 8px;
+}
+
+.messages .message_send2 .message_info svg {
+    transition: .2s ease;
+    padding: 1px;
+}
+
+.messages .message_send2 .message_info svg:hover {
+    transform: scale(1.1);
+    background-color: blanchedalmond;
+    border-radius: 50%;
+}
+
+.messages .message_send2 .timestamp,
+.messages .message_receive .timestamp {
+    color: rgba(36, 33, 33, 0.819);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 5px;
+}
+
+.messages .message_receive {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    margin: 6px 0;
+}
+
+.messages .message_receive div.text {
+    border-radius: 13px 13px 13px 0px;
+    padding: 8px 1.2rem;
+    font-size: 14px;
+    color: rgba(11, 10, 10, 0.838);
+    background-color: rgb(218, 215, 208);
+    width: fit-content;
+    word-spacing: 2px;
+}
+
+.write-message {
+    padding: 10px;
+}
+
+.write-message form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 6px;
+}
+
+.write-message form div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 9px;
+    width: 100%;
+}
+
+.write-message form div input {
+    padding: 6px 10px;
+    border: 1px solid rgba(157, 157, 157, 0.691);
+    outline: none;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.write-message form div input::placeholder {
+    font-size: 12px;
+    color: rgba(14, 50, 117, 0.761);
+}
+
+.write-message form div input:focus-within {
+    border: 1px solid rgba(7, 97, 176, 0.691);
+}
+
+.write-message form button {
+    background-color: transparent;
+    border: none;
+    width: 28px;
+    height: 28px;
+    color: rgba(16, 84, 136, 0.601);
+}
+
+
+/* all chats style */
+
+.one_chat {
+    padding: 4px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.one_chat div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px;
+    position: relative;
+}
+
+.one_chat div p.username {
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.one_chat div p.lastmessage {
+    font-size: 12px;
+    color: rgba(75, 69, 69, 0.76);
+}
+
+.one_chat p.start_time {
+    font-size: 12px;
+    color: rgba(14, 13, 13, 0.811);
+}
+
+.one_chat .online {
+    position: absolute;
+    left: 29px;
+    top: 24px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: greenyellow;
+}
+
+.one_chat img {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+}

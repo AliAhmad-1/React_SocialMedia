@@ -1,0 +1,53 @@
+.following {
+    margin-top: 1.2rem;
+    padding: 0 1.5rem;
+}
+
+.following .user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 12px;
+    border: 1px solid rgba(0, 0, 0, 0.546);
+    margin-top: 8px;
+    border-radius: 3px;
+}
+
+.following .user .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px;
+}
+
+.following .user .right .username {
+    font-size: 15px;
+}
+
+.following .user .right .date {
+    font-size: 11px;
+    color: rgba(75, 69, 69, 0.76);
+}
+
+.following .user .right img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.following .user .left button {
+    padding: 5px 9px;
+    background-color: white;
+    border: 1px solid rgba(31, 31, 31, 0.653);
+    border-radius: 3px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: .3s;
+}
+
+.following .user .left button:hover {
+    cursor: pointer;
+    background-color: rgba(31, 31, 31, 0.815);
+    color: white;
+}

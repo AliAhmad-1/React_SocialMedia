@@ -1,0 +1,62 @@
+.container_add_post {
+    position: absolute;
+    top: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 1.69rem;
+}
+
+.container_add_post .form_add_post {
+    width: 100%;
+    height: max-content;
+    padding: .5rem;
+    border-radius: 7px;
+    background-color: white;
+    z-index: 999;
+    box-shadow: 1px 1px 10px 1px rgba(61, 58, 58, 0.446);
+}
+
+.form_add_post form textarea {
+    min-width: 100%;
+    max-width: 100%;
+    height: 80px;
+    border: none;
+    font-size: 16px;
+    padding: 6px;
+}
+
+.form_add_post form textarea:focus-within {
+    outline: none;
+}
+
+form div.buttom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: .5rem;
+    padding: 5px .5rem;
+}
+
+form img {
+    width: 100%;
+    height: 230px;
+    border-radius: 5px;
+    margin-top: .6rem;
+}
+
+form div.buttom .btn {
+    display: flex;
+    gap: 0 8px;
+}
+
+form div.buttom .btn button {
+    padding: 5px 10px;
+    color: rgba(0, 0, 0, 0.737);
+    border: 1px solid rgba(29, 27, 27, 0.75);
+    font-weight: 600;
+    border-radius: 3px;
+    background-color: white;
+    cursor: pointer;
+}
