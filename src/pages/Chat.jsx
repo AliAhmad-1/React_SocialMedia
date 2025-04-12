@@ -82,7 +82,7 @@ export default function Chat() {
             
             try{
                 
-                ws.current= new WebSocket(`ws://localhost:8000/ws/ac/${room_id}/?access_token=${access_token}`);
+                ws.current= new WebSocket(`wss://majdahmad1234.pythonanywhere.com/ws/ac/${room_id}/?access_token=${access_token}`);
                 ws.current.onopen = () => {
                     console.log('websocket connecting ..!');
                 };
